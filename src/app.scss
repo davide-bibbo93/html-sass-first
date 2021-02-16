@@ -1,0 +1,55 @@
+$font-color: blue;
+$title-trasform: uppercase;
+$font-title: 25px;
+$font-description: 15px;
+$board-padding: 20px;
+$margin: 20px;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  background-color: #233067;
+}
+
+#container {
+  width: 500px;
+  height: 260px;
+  margin: $margin;
+  background-color: #ccc;
+
+  .content {
+    text-align: center;
+    font-weight: bold;
+    padding: $board-padding;
+
+    &-title {
+      color: $font-color;
+      text-transform: $title-trasform;
+      font-size: $font-title;
+    }
+
+    &-description {
+      font-family: Arial, serif;
+      color: $font-color;
+      font-size: $font-description;
+      padding: $board-padding;
+      text-align: justify;
+
+      &-list {
+        list-style: decimal;
+        color: red;
+
+        li {
+          margin: $margin;
+
+        }
+      }
+    }
+  }
+}
